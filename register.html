@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій особистий блог - Реєстрація</title>
+    <link rel="stylesheet" href="style02.css">
+</head>
+<body>
+    <header>
+        <h1>Мій особистий блог</h1>
+        <p>Луговий Павло Романович</p>
+        <nav>
+            <a href="GroupPageWithNameAndSurename.html">Вхід</a>
+            <a href="register.html">Реєстрація</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Реєстрація користувача</h2>
+            <form id="registerForm">
+                <!-- Поле Прізвище -->
+                <div class="form-group">
+                    <label for="surname">Прізвище</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+
+                <!-- Поле Ім'я -->
+                <div class="form-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Поле Логін -->
+                <div class="form-group">
+                    <label for="login">Логін</label>
+                    <input type="text" id="login" name="login" required>
+                </div>
+
+                <!-- Поле Навчальна група -->
+                <div class="form-group">
+                    <label for="group">Навчальна група</label>
+                    <select id="group" name="group" required>
+                        <option value="101-п-Тк">101-п-Тк</option>
+                        <option value="135-р-Тк">135-р-Тк</option>
+                        <option value="122-a-Тк">122-a-Тк</option>
+                    </select>
+                </div>
+                <!-- Поле Пароль -->
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <!-- Поле Підтвердження пароля -->
+                <div class="form-group">
+                    <label for="confirmPassword">Підтвердження пароля</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+
+                <button type="submit" class="btn-primary">Зареєструватись</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Всі права захищені.</p>
+    </footer>
+</body>
+</html>
